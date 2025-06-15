@@ -1,0 +1,275 @@
+/* css reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* cited reset end */
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1, h2, form {
+    font-family: "Andale Mono", monospace;
+    text-align: center;
+}
+
+h3, h4, p, li {
+    font-family: "Andale Mono", monospace;
+    text-align: justify;
+}
+
+.alertSuccess {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-family: "Andale Mono", monospace;
+    color: green;
+}
+
+.alertFail {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-family: "Andale Mono", monospace;
+    color: red;
+}
+
+label {
+    font-family: "Andale Mono", monospace;
+    font-size: 20px;
+}
+
+input {
+    font-family: "Andale Mono", monospace;
+    font-size: 15px;
+    padding: 8px;
+    margin: 2.5px;
+    display: flex;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+.navlink {
+    text-align: center;
+}
+
+.link a {
+    font-family: "Andale Mono", monospace;
+    font-size: 17.5px;
+    text-decoration: none;
+    color: black;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.link a:active {
+    color: grey;
+}
+
+#form1 {
+    font-family: "Andale Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#form2 {
+    font-family: "Andale Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+
+button {
+    width: max-content;
+    font-family: "Andale Mono", monospace;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/*
+
+#sidebar {
+    padding: 25px;
+    margin: 25px;
+    width: 30vw;
+}
+
+*/
+
+#calendar {
+    padding: 25px;
+    margin: 25px;
+}
+
+.article {
+    padding: 25px;
+    margin: 25px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+}
+
+.comment {
+    display: flex;
+}
+
+#home {
+    display: flex;
+}
+
+#sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* margin-left: 1rem; */
+    margin-top: 1rem;
+    max-width: 25%;
+}
+
+.month-button {
+    font-family: "Andale Mono", monospace;
+    font-size: 15px;
+    padding: 5px;
+    margin: 2.5px;
+}
+
+#calendar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.month-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.previous-next-btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#calendar-head th {
+    font-family: "Andale Mono", monospace;
+    font-size: 15px;
+    padding: 15px;
+    border: 2.5px solid black;
+}
+
+#calendar-body td {
+    font-family: "Andale Mono", monospace;
+    font-size: 15px;
+    /* padding: 15px; */
+    border: 2.5px solid black;
+    width: 10rem;
+    height: 6rem;
+    /* txt overflow */
+    word-wrap: break-word;
+    max-width: 10rem;
+}
+
+.favorites {
+    background-color: #CDE1FF;
+}
+
+.eventBtn {
+    border: none;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#create-button {
+    margin-top: 0.5rem;
+}

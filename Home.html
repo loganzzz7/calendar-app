@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Calendar Home </title>
+</head>
+
+<body>
+    <div id="message"></div>
+    <div id="home">
+        <div id="sideBar">
+            <!-- login / signup, welcome with logout -->
+            <div id="form1">
+                <!-- <label> Username: &nbsp; <input type="text" id="user"></label>
+                <label> Password: &nbsp; <input type="password" id="password"></label>
+                <br>
+                <button type="button" id="login-button"> Login </button>
+                <br>
+                <div class="link navlink">
+                    <a id="signup-navigation"> Sign Up </a>
+                </div> -->
+            </div>
+            <br>
+            <br>
+            <div id="form2">
+                <!-- <label> Title: &nbsp; <input type="text" id="title"></label>
+                <label> Date: &nbsp; <input type="date" id="date"></label>
+                <label> Time: &nbsp; <input type="time" id="time"></label>
+                <br>
+                <button type="button" id="create-button"> Create </button> -->
+            </div>
+            <!-- testing modal https://www.w3schools.com/howto/howto_css_modals.asp -->
+            <div id="changeEventModal" class="modal">
+                <div class="modalContent">
+                    <span class="closeBtn">&times;</span>
+                    <div id="form3">
+                        <!-- <label> Title: &nbsp; <input type="text" id="title"></label>
+                        <label> Date: &nbsp; <input type="date" id="date"></label>
+                        <label> Time: &nbsp; <input type="time" id="time"></label>
+                        <br>
+                        <button type="button" id="edit-button"> edit </button>
+                        <button type="button" id="cancel-button"> cancel </button> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="form4">
+                <!-- <label> See Favorites: &nbsp; <input type="checkbox" id="favorites"></label>
+                <label> Search: &nbsp; <input type="text" id="search"></label> -->
+            </div>
+        </div>
+        <div id="calendar">
+            <div class="month-year">
+                <h2 id="month-name"> Month </h2>
+            </div>
+            <div class="previous-next-btns">
+                <button type="button" class="month-button" id="previous-month-button"> Previous Month </button>
+                <button type="button" class="month-button" id="next-month-button"> Next Month </button>
+            </div>
+            <table>
+                <thead id="calendar-head">
+                    <tr>
+                        <th scope="col"> Sunday </th>
+                        <th scope="col"> Monday </th>
+                        <th scope="col"> Tuesday </th>
+                        <th scope="col"> Wednesday </th>
+                        <th scope="col"> Thursday </th>
+                        <th scope="col"> Friday </th>
+                        <th scope="col"> Saturday </th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="constants.js"></script>
+    <script src="load.js"></script>
+    <script src="login.forms.js"></script>
+    <script src="events.forms.js"></script>
+    <script src="filtering.forms.js"></script>
+    <script src="login.ajax.js"></script>
+    <script src="events.ajax.js"></script>
+    <script src="calendar.js"></script>
+    <script src="calendar.grid.js"></script>
+</body>
+
+</html>
